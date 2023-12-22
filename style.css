@@ -6,8 +6,7 @@
 }
 
 header {
-  background-color: rgb(0 0 0 / 20%);
-  background: #000095;
+  background-color: rgb(0 0 0 / 12%);
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -64,6 +63,7 @@ header img {
   img {
     display: none;
   }
+
   header {
     width: 100%;
   }
@@ -87,6 +87,7 @@ header img {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.08);
   }
@@ -98,11 +99,9 @@ header img {
 }
 
 .container {
-  background: radial-gradient(
-    194.75% 33.98% at 50.02% 110.1%,
-    #1545b3 0%,
-    #002781 100%
-  );
+  background: radial-gradient(194.75% 33.98% at 50.02% 110.1%,
+      #1545b3 0%,
+      #002781 100%);
   color: #fff;
   display: flex;
 }
@@ -120,20 +119,26 @@ header img {
   height: 300px;
 }
 
-.texto {
+#hero .conteudo .texto {
   display: flex;
   flex-direction: column;
+  width: 616px;
 }
 
-.texto h1 {
-  font-size: 50px;
+#hero .conteudo .texto h1 {
+  font-size: 33px;
   margin-bottom: 30px;
   margin-right: 30px;
+  text-align: left;
+  color: white;
 }
 
-.texto p {
+#hero .conteudo .texto p {
   font-size: 18px;
   opacity: 0.8;
+  color: #c1c1c1;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .texto button:hover {
@@ -144,13 +149,14 @@ header img {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.08);
   }
 }
 
-.texto button {
-  margin-top: 60px;
+#hero .conteudo .texto button {
+  margin-top: 33px;
   width: 150px;
   background-color: #fff;
   font-size: 20px;
@@ -163,12 +169,48 @@ header img {
 }
 
 .beneficios {
-  height: calc(100vh - 80px);
-  background-color: #f5f5f5;
+  background-color: #ff0f0f;
   margin-bottom: 300px;
 }
 
-.conteudo h1 {
-  text-align: center;
-  margin-top: 300px;
+section#hero {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0 29 255) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero .conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 118px;
+  gap: 43px;
+  max-width: 100%;
+  padding-bottom: 136px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .conteudo {
+  width: 1350px;
+  padding: 30px;
+  max-width: 100%;
+}
+
+body,
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+#solucoes .conteudo {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
