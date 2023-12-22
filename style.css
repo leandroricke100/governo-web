@@ -7,11 +7,7 @@
 
 header {
   background-color: rgb(0 0 0 / 20%);
-  background: radial-gradient(
-    194.75% 33.98% at 50.02% 110.1%,
-    #1545b3 0%,
-    #002781 100%
-  );
+  background: #000095;
   display: flex;
   justify-content: space-around;
   width: 100%;
