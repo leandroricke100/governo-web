@@ -256,3 +256,17 @@ html {
   font-weight: bold;
   color: #696969;
 }
+
+.container-items:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
