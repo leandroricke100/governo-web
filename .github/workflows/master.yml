@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - master
+name: 🚀 Deploy - Protótipo
+jobs:
+  governowebprot:
+    name: 🌐 Deploy - Protótipo GovernoWeb
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔎 Verificando Diretório
+        uses: actions/checkout@v3
+
+      - name: 📂 Sincronizando Arquivos
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: public_html/prototipo/
