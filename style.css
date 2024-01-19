@@ -21,8 +21,6 @@ header {
   top: 20px;
   border-radius: 15px;
   position: absolute;
-  /* padding-left: 100px; */
-  /* padding-right: 100px; */
 }
 
 header img {
@@ -58,8 +56,6 @@ header img {
   color: #fff;
   outline: none;
   border: none;
-  /* width: 255px; */
-  /* height: 51px; */
   padding: 11px;
   border-radius: 14px;
   cursor: pointer;
@@ -175,7 +171,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 1350px; */
 }
 
 section .conteudo {
@@ -277,13 +272,9 @@ section.sistemas {
   margin-bottom: 70px;
 }
 
-.sistemas {
-  /* padding: 30px; */
-}
 
 .items {
   display: flex;
-  /* width: 100%; */
   gap: 55px;
   align-items: center;
   padding: 47px 37px;
@@ -317,9 +308,7 @@ button.button-orçamento {
   align-items: center;
   text-align: left;
   font-size: 20px;
-  /* font-weight: 100; */
   margin-bottom: 10px;
-  /* color: #fff; */
 }
 
 .button-orçamento:hover {
@@ -338,19 +327,16 @@ button.button-orçamento {
 
 
 .clientes {
-  /* padding: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 
   h2 {
     color: #1545B3;
     padding: 70px;
     font-size: 40px;
   }
-
-  ;
-  margin-bottom: 100px;
 }
 
 .slider {
@@ -383,11 +369,6 @@ button.button-orçamento {
 
 .slide img {
   width: 395px;
-  /* margin-bottom: 35px; */
-  /* margin-top: 30px; */
-  /* align-items: center; */
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .manual-navigation {
@@ -511,8 +492,6 @@ footer {
   justify-content: center;
   padding: 17px;
   gap: 133px;
-  /* flex-direction: row; */
-  /* max-width: 1350px; */
 }
 
 .fa-instagram:before {
@@ -556,15 +535,13 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 7px;
 
   a {
     color: #fff;
     outline: none;
     text-decoration: none;
   }
-
-
-  gap: 7px;
 }
 
 .direitos {
@@ -590,15 +567,13 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 7px;
 
   a {
     color: #fff;
     outline: none;
     text-decoration: none;
   }
-
-
-  gap: 7px;
 }
 
 .fa-instagram:before {
