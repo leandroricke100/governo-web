@@ -6,12 +6,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=<v?=time() ?>" />
   <title>GovernoWeb</title>
   <link rel="stylesheet" href="./fontawesome/fontawesome-pro.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +27,7 @@
 
           <li>
             <button class="whatsapp">
-              <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-                target="_blank">
+              <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">
                 <i class="far fa-user" style="margin-right: 5px"></i> Falar
                 com Atendente
               </a>
@@ -52,8 +49,7 @@
         </p>
 
         <button>
-          <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-            target="_blank">Saiba mais<i class="fas fa-angle-down" style="margin-left: 10px"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">Saiba mais<i class="fas fa-angle-down" style="margin-left: 10px"></i></a>
         </button>
       </div>
       <div class="img">
@@ -261,8 +257,7 @@
             <span><i class="fas fa-clock" style="margin-right: 8px;"></i>Seg a sex - 08:00 / 17:30</span>
           </div>
           <div class="endereco">
-            <span><a href="mailto:email@provedor.com.br"><i class="fas fa-envelope"
-                  style="margin-right: 8px;"></i>contato@governoweb.com.br</a></span>
+            <span><a href="mailto:email@provedor.com.br"><i class="fas fa-envelope" style="margin-right: 8px;"></i>contato@governoweb.com.br</a></span>
             <span><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Rua Peçanha, 848 - Sl 06 - Centro
               <br>Governador Valadares - MG</span>
           </div>
@@ -274,8 +269,7 @@
 
   <a href="#hero" class="botao-subir"><i class="fas fa-caret-up"></i></a>
 
-  <a href="https://api.whatsapp.com/send?phone=5531984655356&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!"
-    class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+  <a href="https://api.whatsapp.com/send?phone=5531984655356&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
     <img src="assets/whatssapp.svg" alt="Botao whatssapp" />
 
   </a>
