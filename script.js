@@ -1,18 +1,43 @@
-let count = 1;
 
-document.getElementById("radio1").checked = true;
+document.addEventListener("DOMContentLoaded", function () {
+  const botaoUp = document.querySelector('.botao-subir');
 
-setInterval(function () {
-  nextImage()
-}, 3000);
+  botaoUp.addEventListener('click', function (e) {
+    e.preventDefault();
 
-function nextImage() {
-  count++;
-  if (count > 4) {
-    count = 1;
+    const destino = this.getAttribute('href');
+
+    const targetElement = document.querySelector(destino);
+    const targetPosition = targetElement.offsetTop;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+const slidesClientes = document.querySelectorAll('.slide-clientes');
+const sliderClientes = document.querySelector('.slides-clientes');
+
+let indexClientes = 0;
+
+function nextSlideClientes() {
+  indexClientes++;
+  if (indexClientes === slidesClientes.length) {
+    indexClientes = 0;
   }
-  document.getElementById('radio' + count).checked = true
+  updateSlideClientes();
 }
+
+function updateSlideClientes() {
+  sliderClientes.style.transform = `translateX(-${indexClientes * 100}%)`;
+}
+
+setInterval(nextSlideClientes, 4000);
+
+
 
 
 const slides = document.querySelectorAll('.slide-depoimentos');
@@ -32,5 +57,5 @@ function updateSlide() {
   slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 4000);
 
