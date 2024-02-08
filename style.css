@@ -110,7 +110,7 @@ header img {
 #hero .conteudo .texto p {
   font-size: 23px;
   opacity: 0.8;
-  color: #d0d0d0;
+  color: #ffffff;
   font-size: 15px;
   line-height: 1.4;
 }
@@ -579,4 +579,69 @@ footer {
 .fa-instagram:before {
   content: "\f16d";
   color: #fff;
+}
+
+.slider-depoimentos {
+  width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides-depoimentos {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-depoimentos {
+  min-width: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bloco-img {
+  img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+}
+
+.bloco-depoimento {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 15px;
+
+  span {
+    color: #949494;
+  }
+
+  p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+#papel {
+  color: #6610f2;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .menu {
+    display: none;
+  }
+
+  #hero .conteudo {
+    flex-direction: column;
+  }
 }
