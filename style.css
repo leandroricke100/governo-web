@@ -210,7 +210,8 @@ html {
 #solucoes h1 {
   text-align: center;
   font-size: 40px;
-  color: #1545B3;
+  color: #007bff;
+  padding-bottom: 40px;
 }
 
 .container-beneficios {
@@ -228,7 +229,7 @@ html {
   width: 221px;
   height: 179px;
   border-radius: 20px;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -260,15 +261,20 @@ html {
   background-color: #EFEFEF;
   height: 58px;
   border-radius: 227px;
-  width: 55px;
+  width: 58px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 section.sistemas {
-  background: radial-gradient(277.74% 76.5% at 67% 56.79%, #2C7AFE 0%, #00348C 100%);
-  color: #fff;
+  background-image: url(assets/computador.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  /* background: radial-gradient(277.74% 76.5% at 67% 56.79%, #2C7AFE 0%, #00348C 100%);
+  color: #fff; */
 }
 
 .container-sistemas {
@@ -283,17 +289,20 @@ section.sistemas {
   font-size: 38px;
   text-align: center;
   margin-bottom: 70px;
+  background: rgb(0 0 0 / 34%);
+  color: white;
+  padding: 9px;
+  border-radius: 6px;
 }
 
 
 .items {
   display: flex;
-  gap: 55px;
   align-items: center;
-  padding: 47px 37px;
   border-radius: 15px;
   justify-content: center;
-  background: rgba(217, 217, 217, 0.08);
+  background: rgb(0 0 0 / 34%);
+  /* background: rgba(217, 217, 217, 0.08); */
 }
 
 button.button-orçamento {
@@ -309,6 +318,11 @@ button.button-orçamento {
   cursor: pointer;
 }
 
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .wrap-img img {
   width: 84%;
   max-width: 100%;
@@ -322,6 +336,14 @@ button.button-orçamento {
   text-align: left;
   font-size: 20px;
   margin-bottom: 10px;
+  color: #fff;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.wrap p:hover {
+  background-color: #007bff;
+  border-radius: 8px;
 }
 
 .button-orçamento:hover {
@@ -346,9 +368,12 @@ button.button-orçamento {
   margin-bottom: 100px;
 
   h2 {
-    color: #1545B3;
-    padding: 70px;
+    color: #007bff;
     font-size: 40px;
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 10px;
   }
 }
 
@@ -570,6 +595,8 @@ footer {
   margin-bottom: 29px;
   font-weight: bold;
   font-size: 13px;
+  background-color: #0013a03d;
+  padding: 14px;
 }
 
 .rede-social {
@@ -705,9 +732,19 @@ footer {
   color: #6610f2;
 }
 
-
+#cliente-mobile {
+  display: none;
+}
 
 @media screen and (max-width:768px) {
+
+  .slider-clientes {
+    display: none;
+  }
+
+  #cliente-mobile {
+    display: block;
+  }
 
   header {
     width: 90%;
@@ -786,12 +823,29 @@ footer {
     font-size: 33px;
   }
 
+  .container-beneficios {
+    gap: 20px;
+  }
+
   .container-items {
     width: 163px;
     height: 157px;
 
     i {
-      font-size: 20px;
+      font-size: 17px;
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .clientes {
+    h2 {
+
+      font-size: 28px;
     }
   }
 
