@@ -497,6 +497,7 @@ button.button-orçamento {
   bottom: 100px;
   right: 38px;
   z-index: 99;
+  color: #007bff;
 }
 
 .botao-subir:active {
@@ -847,6 +848,44 @@ footer {
 
       font-size: 28px;
     }
+  }
+
+  .container-footer {
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .atendimento {
+    flex-direction: column;
+
+  }
+
+  .container-atendimento {
+    flex-direction: column;
+
+    .horario {
+      align-items: center;
+      background: rgb(168 168 168 / 44%);
+      padding: 8px;
+      border-radius: 13px;
+    }
+
+    .endereco {
+      align-items: center;
+      background: rgb(168 168 168 / 44%);
+      padding: 8px;
+      border-radius: 13px;
+    }
+  }
+
+  .container-sistemas h1 {
+    font-size: 28px;
+  }
+
+  .wrap p {
+    font-size: 15px;
+    padding: 9px
   }
 
 }
