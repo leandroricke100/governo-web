@@ -829,8 +829,8 @@ footer {
   }
 
   .container-items {
-    width: 163px;
-    height: 157px;
+    width: 130px;
+    height: 133px;
 
     i {
       font-size: 17px;
@@ -886,6 +886,11 @@ footer {
   .wrap p {
     font-size: 15px;
     padding: 9px
+  }
+
+  .direitos {
+    text-align: center;
+    font-size: 11px;
   }
 
 }
