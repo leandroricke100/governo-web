@@ -714,6 +714,10 @@ footer {
   display: none;
 }
 
+.bloco-img {
+  margin-right: 30px;
+}
+
 @media screen and(max-width:900px) {
   .menu {
     display: none;
