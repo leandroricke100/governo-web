@@ -51,11 +51,6 @@ header img {
   padding: 10px;
 }
 
-.menu-ul a:hover {
-  padding: 10px;
-  border-radius: 8px;
-  background: rgb(217 217 217 / 39%);
-}
 
 .menu-ul a:not(.falar-com-atendente):hover {
   padding: 10px;
@@ -64,33 +59,24 @@ header img {
 }
 
 
-.menu-ul button {
-  background-color: #f89b11;
+.falar-com-atendente {
+  background-color: rgba(77, 198, 34, 1);
   font-size: 16px;
-  color: #fff;
   outline: none;
   border: none;
-  padding: 11px;
-  border-radius: 14px;
+  border-radius: 3px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.menu-ul button a {
-  text-decoration: none;
+a.whatsapp.falar-com-atendente {
+  padding: 15px;
 }
 
-.whatsapp:hover {
-  animation: scaleButton 0.9s alternate infinite;
-}
+.falar-com-atendente:hover {
 
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.08);
-  }
+  background-color: #f89b11;
+  transition: .2s ease;
 }
 
 .img img {
@@ -128,33 +114,33 @@ header img {
   line-height: 1.4;
 }
 
-.texto button:hover {
-  animation: scaleButton 0.7s alternate infinite;
-}
 
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
 
-  to {
-    transform: scale(1.08);
-  }
-}
-
-#hero .conteudo .texto button {
+#saiba-mais {
   margin-top: 33px;
   width: 189px;
   height: 51px;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 20px;
-  color: #1545b3;
+  color: white;
   outline: none;
-  border: none;
-  padding: 10px;
-  border-radius: 14px;
+  border: 2px solid #608fffa1;
+  border-radius: 3px;
   cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#saiba-mais:hover {
+  background-color: #fff;
+  color: #0A42A5;
+  border: none;
+  transition: .2s ease;
+}
+
 
 .beneficios {
   background-color: #f0f0f0;
@@ -173,11 +159,10 @@ section#hero {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 118px;
   gap: 43px;
   max-width: 100%;
-  padding-bottom: 136px;
   background-size: cover;
+  padding: 90px 10px 80px 30px;
 }
 
 section {
@@ -188,7 +173,7 @@ section {
 
 section .conteudo {
   width: 1350px;
-  padding: 30px;
+  /* padding: 30px; */
   max-width: 100%;
 }
 
@@ -198,20 +183,14 @@ html {
   max-width: 100%;
 }
 
-#solucoes .conteudo {
-  padding-top: 70px;
-}
 
-#hero .conteudo .texto button a {
-  text-decoration: none;
-  color: black;
-}
+
 
 #solucoes h1 {
   text-align: center;
   font-size: 40px;
   color: #007bff;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .container-beneficios {
@@ -220,11 +199,12 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .container-items {
   background-color: #fff;
+  color: #696969;
   text-align: center;
   width: 221px;
   height: 179px;
@@ -237,12 +217,15 @@ html {
   align-items: center;
   font-size: 15px;
   font-weight: bold;
-  color: #696969;
   box-shadow: 0px 22px 12.4px -20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  animation-timing-function: ease;
 }
 
 .container-items:hover {
-  animation: scaleButton 0.8s alternate infinite;
+  transform: translateY(-7px) scale(1.05);
+  /* color: white; */
+  transition: 0.2s ease;
 }
 
 @keyframes scaleButton {
@@ -267,6 +250,8 @@ html {
   justify-content: center;
 }
 
+
+
 section.sistemas {
   background-image: url(assets/computador.jpg);
   display: flex;
@@ -288,21 +273,23 @@ section.sistemas {
 .container-sistemas h1 {
   font-size: 38px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   background: rgb(0 0 0 / 34%);
   color: white;
-  padding: 9px;
-  border-radius: 6px;
+  padding: 15px;
+  border-radius: 3px;
 }
 
 
 .items {
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 3px;
   justify-content: center;
   background: rgb(0 0 0 / 34%);
   /* background: rgba(217, 217, 217, 0.08); */
+  transition: .1s;
+  padding: 20px;
 }
 
 button.button-orçamento {
@@ -338,13 +325,13 @@ button.button-orçamento {
   margin-bottom: 10px;
   color: #fff;
   padding: 17px;
-  cursor: pointer;
 }
 
+/* 
 .wrap p:hover {
   background-color: #007bff;
   border-radius: 8px;
-}
+} */
 
 .button-orçamento:hover {
   animation: scaleButton 0.8s alternate infinite;
@@ -366,15 +353,15 @@ button.button-orçamento {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+}
 
-  h2 {
-    color: #007bff;
-    font-size: 40px;
-    margin-top: 70px;
-    text-align: center;
-    margin-bottom: 70px;
-    padding: 10px;
-  }
+.clientes h2 {
+  color: #007bff;
+  font-size: 40px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  /* padding: 10px; */
 }
 
 .slider {
@@ -497,7 +484,7 @@ button.button-orçamento {
   bottom: 100px;
   right: 38px;
   z-index: 99;
-  color: #007bff;
+  color: #8a9096;
 }
 
 .botao-subir:active {
@@ -533,9 +520,8 @@ footer {
 .container-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 17px;
-  gap: 133px;
+  justify-content: space-evenly;
+  padding: 30px;
 }
 
 .fa-instagram:before {
@@ -547,10 +533,10 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
 
-  img {
-    width: 175px;
-  }
+.rede-logo img {
+  width: 175px;
 }
 
 .atendimento {
@@ -558,12 +544,12 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
+.atendimento p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 
@@ -571,7 +557,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 30px;
+  font-size: 14px;
 }
 
 .endereco {
@@ -580,32 +567,34 @@ footer {
   align-items: flex-start;
   justify-content: center;
   gap: 7px;
+}
 
-  a {
-    color: #fff;
-    outline: none;
-    text-decoration: none;
-  }
+.endereco a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
 }
 
 .direitos {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 29px;
-  margin-bottom: 29px;
+  /* margin-top: 29px; */
+  margin-bottom: 30px;
+  text-align: center;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   background-color: #0013a03d;
-  padding: 14px;
+  padding: 15px;
 }
 
 .rede-social {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 7px;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .horario {
@@ -614,12 +603,12 @@ footer {
   align-items: flex-start;
   justify-content: center;
   gap: 7px;
+}
 
-  a {
-    color: #fff;
-    outline: none;
-    text-decoration: none;
-  }
+.horario a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
 }
 
 .fa-instagram:before {
@@ -647,44 +636,36 @@ footer {
   justify-content: center;
   background-color: #e3e3e3;
   border-radius: 10px;
-  padding: 10px;
+  padding: 30px;
 }
 
-.bloco-img {
-  img {
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid white;
-  }
+.bloco-img img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
 }
 
 .bloco-depoimento {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+}
 
+.bloco-depoimento span {
+  color: #949494;
+}
 
-
-  span {
-    color: #949494;
-  }
-
-  p {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 15px;
-  }
+.bloco-depoimento p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  color: #5f5f5f;
 }
 
 #papel {
   color: #6610f2;
 }
-
-
-
-
-
 
 .slider-clientes {
   width: 700px;
@@ -702,12 +683,10 @@ footer {
   min-width: 100%;
 }
 
-.bloco-img {
-  img {
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid white;
-  }
+.bloco-img img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #d3d3d3;
 }
 
 .bloco-cliente {
@@ -715,18 +694,16 @@ footer {
   flex-direction: column;
   gap: 10px;
   margin-left: 15px;
+}
 
+.bloco-cliente span {
+  color: #949494;
+}
 
-
-  span {
-    color: #949494;
-  }
-
-  p {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 15px;
-  }
+.bloco-cliente p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 #papel {
@@ -736,6 +713,7 @@ footer {
 #cliente-mobile {
   display: none;
 }
+
 
 @media screen and (max-width:768px) {
 
@@ -767,88 +745,89 @@ footer {
     flex-direction: column;
   }
 
-  .bloco-depoimento {
-    h3 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-    }
+  .bloco-depoimento h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
 
-    span {
-      font-size: 12px;
-    }
+  .bloco-depoimento span {
+    font-size: 12px;
+  }
 
-    p {
-      font-size: 12px;
-    }
+  .bloco-depoimento p {
+    font-size: 12px;
+
   }
 
   #hero .conteudo .texto {
     width: 100%;
-
-    h1 {
-      font-size: 22px;
-      margin-right: 0;
-    }
-
-    p {
-      font-size: 12px;
-    }
-
-    button {
-      width: 154px;
-      height: 41px;
-      padding: 0px;
-
-      a {
-        color: #757575;
-        font-size: 16px;
-        font-weight: bold;
-      }
-    }
   }
 
-  .img {
-    img {
-      width: 90%;
-      height: auto;
-    }
+  #hero .conteudo .texto h1 {
+    font-size: 22px;
+    margin-right: 0;
   }
+
+  #hero .conteudo .texto p {
+    font-size: 12px;
+  }
+
+  #hero .conteudo .texto button {
+    width: 154px;
+    height: 41px;
+    padding: 0px;
+  }
+
+  #hero .conteudo .texto button a {
+    color: #757575;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
 
   #solucoes .conteudo {
     padding-top: 0;
   }
 
   #solucoes h1 {
-    font-size: 33px;
+    font-size: 30px;
+    padding-bottom: 0px;
   }
 
   .container-beneficios {
     gap: 20px;
+    margin-bottom: 70px;
   }
 
   .container-items {
     width: 130px;
     height: 133px;
-
-    i {
-      font-size: 17px;
-      width: 40px;
-      height: 40px;
-    }
-
-    p {
-      font-size: 13px;
-    }
   }
 
-  .clientes {
-    h2 {
-
-      font-size: 28px;
-    }
+  .container-items i {
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
   }
+
+  .container-items p {
+    font-size: 13px;
+  }
+
+  .clientes h2 {
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
 
   .container-footer {
     gap: 10px;
@@ -863,24 +842,35 @@ footer {
 
   .container-atendimento {
     flex-direction: column;
+    font-size: 13px;
+    gap: 10px;
+  }
 
-    .horario {
-      align-items: center;
-      background: rgb(168 168 168 / 44%);
-      padding: 8px;
-      border-radius: 13px;
-    }
+  .horario {
+    align-items: center;
+    background: rgb(168 168 168 / 44%);
+    padding: 8px;
+    border-radius: 13px;
+  }
 
-    .endereco {
-      align-items: center;
-      background: rgb(168 168 168 / 44%);
-      padding: 8px;
-      border-radius: 13px;
-    }
+  .endereco {
+    align-items: center;
+    background: rgb(168 168 168 / 44%);
+    padding: 8px;
+    border-radius: 13px;
   }
 
   .container-sistemas h1 {
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  .container-sistemas {
+    margin-bottom: 70px;
+  }
+
+  .items {
+    margin: 30px;
   }
 
   .wrap p {
@@ -891,6 +881,42 @@ footer {
   .direitos {
     text-align: center;
     font-size: 11px;
+  }
+
+  #hero .conteudo {
+    padding: 70px 30px 70px 30px;
+  }
+
+  #saiba-mais {
+    width: 150px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .btn-whatsapp img {
+    max-width: 45px;
+  }
+
+  .botao-subir {
+    bottom: 85px;
+    right: 30px;
+  }
+
+  .conteudo {
+    margin-top: 70px;
+  }
+
+  .clientes {
+    margin-bottom: 70px;
+  }
+
+  .rede-social {
+    font-size: 13px;
+
+  }
+
+  .rede-social a i {
+    font-size: 20px !important;
   }
 
 }

@@ -87,3 +87,4 @@ const handleMediaQueryChange = (mediaQuery) => {
 handleMediaQueryChange(mediaQuery);
 mediaQuery.addListener(handleMediaQueryChange);
 
+
