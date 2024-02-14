@@ -714,6 +714,16 @@ footer {
   display: none;
 }
 
+@media screen and(max-width:900px) {
+  .menu {
+    display: none;
+  }
+}
+
+#menu-mobile {
+  display: none;
+}
+
 
 @media screen and (max-width:768px) {
 
@@ -723,6 +733,19 @@ footer {
 
   #cliente-mobile {
     display: block;
+  }
+
+  #menu-mobile {
+    display: block;
+
+  }
+
+  button.bloco-mobile {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
   }
 
   header {
@@ -800,6 +823,8 @@ footer {
   #solucoes h1 {
     font-size: 30px;
     padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .container-beneficios {
@@ -826,6 +851,7 @@ footer {
     font-size: 30px;
     margin-top: 70px;
     margin-bottom: 70px;
+    padding: 0 30px;
   }
 
 
