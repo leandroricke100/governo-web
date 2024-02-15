@@ -21,8 +21,17 @@
     <header>
       <nav id="menu-mobile">
         <button onclick="menuMobile()" class="bloco-mobile">
-          <i class="fal fa-bars"></i>
+          <div id="open">
+            <i class="fal fa-bars"></i>
+          </div>
         </button>
+        <button onclick="fechar()" id="close" class="bloco-mobile" style="display: none;">
+          <div>
+            <i class="fas fa-times"></i>
+          </div>
+        </button>
+
+
       </nav>
       <img src="./assets/logo-governo.png" alt="logo governo web" />
       <nav class="menu">
@@ -32,23 +41,23 @@
           <li><a href="#clientes">Clientes</a></li>
           <li><a href="#solucao">Soluções</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-
-          <li>
-
-            <a class="whatsapp falar-com-atendente"
+          <li><a class="whatsapp falar-com-atendente"
               href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
               target="_blank">
               <i class="far fa-user" style="margin-right: 5px"></i> Falar
-              com Atendente
-            </a>
-
-          </li>
+              com Atendente</a></li>
         </ul>
       </nav>
-
-
     </header>
-    <div class=" conteudo">
+
+    <div class="conteudo">
+      <div class="menu-lateral" id="menu-lateral" style="display: none;">
+        <a href="#solucoes">Benefícios</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#solucao">Soluções</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a id="falar-atendente">Falar com Atendente</a>
+      </div>
       <div class="texto">
         <h1>
           Conheça as melhores e mais completas soluções para o Poder

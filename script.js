@@ -91,7 +91,13 @@ mediaQuery.addListener(handleMediaQueryChange);
 
 
 function menuMobile() {
-  alert('teste');
+  $('#close').show();
+  $('#open').hide();
+  $('.menu-lateral').show();
 }
 
-
+function fechar() {
+  $('#close').hide();
+  $('#open').show();
+  $('.menu-lateral').hide();
+}
