@@ -710,9 +710,7 @@ footer {
   color: #6610f2;
 }
 
-#cliente-mobile {
-  display: none;
-}
+
 
 .bloco-img {
   margin-right: 30px;
@@ -786,9 +784,7 @@ a#falar-atendente {
     display: none;
   } */
 
-  #cliente-mobile {
-    display: block;
-  }
+
 
   #menu-mobile {
     display: block;

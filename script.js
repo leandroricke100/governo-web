@@ -72,22 +72,22 @@ setInterval(nextSlide, 4000);
 
 
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-const handleMediaQueryChange = (mediaQuery) => {
-  if (mediaQuery.matches) {
-    $('#cliente-mobile').show();
-    $('.slider-clientes').hide();
-    $('#menu-mobile').show();
-  } else {
+// const mediaQuery = window.matchMedia('(max-width: 768px)');
+// const handleMediaQueryChange = (mediaQuery) => {
+//   if (mediaQuery.matches) {
+//     $('#cliente-mobile').show();
+//     $('.slider-clientes').hide();
+//     $('#menu-mobile').show();
+//   } else {
 
-    $('#cliente-mobile').hide();
-    $('.slider-clientes').show();
-    $('#menu-mobile').hide();
+//     $('#cliente-mobile').hide();
+//     $('.slider-clientes').show();
+//     $('#menu-mobile').hide();
 
-  }
-};
-handleMediaQueryChange(mediaQuery);
-mediaQuery.addListener(handleMediaQueryChange);
+//   }
+// };
+// handleMediaQueryChange(mediaQuery);
+// mediaQuery.addListener(handleMediaQueryChange);
 
 
 function menuMobile() {
