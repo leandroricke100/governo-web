@@ -54,7 +54,7 @@ header img {
 
 .menu-ul a:not(.falar-com-atendente):hover {
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 3px;
   background: rgb(217 217 217 / 39%);
 }
 
@@ -524,24 +524,11 @@ footer {
 .container-footer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 30px;
-}
-
-.fa-instagram:before {
-  content: "\f16d";
-  font-size: 29px;
-}
-
-.rede-logo {
-  display: flex;
-  align-items: center;
   flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* padding: 30px; */
 }
 
-.rede-logo img {
-  width: 175px;
-}
 
 .atendimento {
   display: flex;
@@ -559,7 +546,8 @@ footer {
 
 .container-atendimento {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
   gap: 30px;
   font-size: 14px;
@@ -582,14 +570,11 @@ footer {
 .direitos {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* margin-top: 29px; */
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: bold;
+  justify-content: space-around;
+  /* font-weight: bold; */
   font-size: 12px;
-  background-color: #0013a03d;
-  padding: 15px;
+  background-color: #0000003d;
+  padding: 12px;
 }
 
 .rede-social {
@@ -597,8 +582,11 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.rede-social a i {
+  font-size: 20px;
 }
 
 .horario {
@@ -732,7 +720,7 @@ footer {
   position: absolute;
   left: 0px;
   top: 106px;
-  background-color: #00008b;
+  background-color: #111141;
   width: 100%;
   padding: 30px 20px;
   justify-content: center;
@@ -770,8 +758,56 @@ a#falar-atendente {
   margin-top: 10px;
 }
 
+#btn-mudar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+#btn-mudar button {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #007bff;
+  cursor: pointer;
+
+}
+
+.empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+}
 
 
+#btn-atendente {
+
+  text-decoration: none;
+  background-color: rgba(77, 198, 34, 1);
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px;
+  color: #fff;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-footer a {
+  color: white;
+  text-decoration: none;
+}
 
 /* @media screen and(max-width:900px) {
   .menu {
@@ -779,7 +815,20 @@ a#falar-atendente {
   }
 } */
 
+div#itens-footer {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  max-width: 1350px;
+  width: 100%;
+  justify-content: space-around;
+}
 
+.title-atendimento {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 
 @media screen and (max-width:768px) {
@@ -839,7 +888,7 @@ a#falar-atendente {
   }
 
   #hero .conteudo .texto h1 {
-    font-size: 22px;
+    font-size: 28px;
     margin-right: 0;
   }
 
@@ -871,7 +920,7 @@ a#falar-atendente {
   }
 
   #solucoes h1 {
-    font-size: 30px;
+    font-size: 28px;
     padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 30px;
@@ -900,7 +949,7 @@ a#falar-atendente {
   }
 
   .clientes h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 70px;
     margin-bottom: 70px;
     padding: 0 30px;
@@ -990,12 +1039,9 @@ a#falar-atendente {
 
   .rede-social {
     font-size: 13px;
-
   }
 
-  .rede-social a i {
-    font-size: 20px !important;
-  }
+
 
   .slide-depoimentos {
     padding: 15px;

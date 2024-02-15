@@ -67,9 +67,30 @@ function updateSlide() {
   slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 6000);
 
 
+const voltar = document.getElementById('voltar');
+const proximo = document.getElementById('proximo');
+
+voltar.addEventListener('click', voltarSlide);
+proximo.addEventListener('click', proximoSlide);
+
+function proximoSlide() {
+  index++;
+  if (index === slides.length) {
+    index = 0
+  }
+  updateSlide();
+}
+
+function voltarSlide() {
+  index--;
+  if (index < 0) {
+    index = slides.length - 1;
+  }
+  updateSlide();
+}
 
 
 
