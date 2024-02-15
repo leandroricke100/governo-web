@@ -782,9 +782,9 @@ a#falar-atendente {
 
 @media screen and (max-width:768px) {
 
-  .slider-clientes {
+  /* .slider-clientes {
     display: none;
-  }
+  } */
 
   #cliente-mobile {
     display: block;
@@ -1010,4 +1010,76 @@ a#falar-atendente {
     margin-right: 0px;
   }
 
+  .slider-clientes {
+    width: 100%;
+  }
+
+  .slides-clientes {
+    align-items: center;
+    height: auto;
+  }
+
+  .bloco-cliente {
+    margin-left: 0px !important;
+    padding: 0px 30px !important;
+  }
+
+  #pedradosvolantes {
+    width: 323px !important;
+    margin-left: 5px !important;
+  }
+
+  #manga {
+    width: 215px !important;
+  }
+
+  #nanuque {
+    width: 250px !important;
+    margin-left: 0px !important;
+  }
+
+  #senadormendes {
+    width: 359px !important;
+    margin-left: -16px !important;
+  }
+
+  #saogeraldodobaxio {
+    width: 328px !important;
+    margin-left: -11px !important;
+  }
+
+  #alvoradademinas {
+    width: 257px !important;
+    margin-left: -10px !important;
+  }
+
+  #galileia {
+    width: 203px !important;
+    margin-left: 17px !important;
+  }
+
+  #novabelem {
+    width: 268px !important;
+    margin-left: 17px !important;
+  }
+
+  #itaobim {
+    width: 211px !important;
+    margin-left: 16px !important;
+  }
+
+  #centraldeminas {
+    width: 282px !important;
+    margin-left: -2px !important;
+  }
+
+  #conselheiropena {
+    width: 336px !important;
+    margin-left: -9px !important;
+  }
+
+  #freiinocencio {
+    width: 298px !important;
+    margin-left: -7px !important;
+  }
 }
