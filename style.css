@@ -525,6 +525,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
   /* justify-content: space-evenly; */
   /* padding: 30px; */
 }
@@ -783,6 +784,9 @@ a#falar-atendente {
   font-size: 14px;
 }
 
+#gw {
+  font-size: 18px;
+}
 
 #btn-atendente {
 
@@ -828,11 +832,24 @@ div#itens-footer {
   margin-top: 30px;
   font-weight: 600;
   font-size: 20px;
+
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 
 @media screen and (max-width:768px) {
 
+  div#itens-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .empresa {
+    align-items: center;
+  }
 
   #menu-mobile {
     display: block;
@@ -969,6 +986,7 @@ div#itens-footer {
 
   .container-atendimento {
     flex-direction: column;
+    align-items: center;
     font-size: 13px;
     gap: 10px;
   }
@@ -1040,8 +1058,6 @@ div#itens-footer {
   .rede-social {
     font-size: 13px;
   }
-
-
 
   .slide-depoimentos {
     padding: 15px;
@@ -1122,5 +1138,15 @@ div#itens-footer {
   #freiinocencio {
     width: 298px !important;
     margin-left: -7px !important;
+  }
+
+  .menu-footer {
+    align-items: center;
+
+    font-weight: 600;
+  }
+
+  .rua {
+    text-align: center;
   }
 }
