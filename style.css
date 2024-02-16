@@ -525,9 +525,6 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
-  /* justify-content: space-evenly; */
-  /* padding: 30px; */
 }
 
 
@@ -552,6 +549,12 @@ footer {
   justify-content: center;
   gap: 30px;
   font-size: 14px;
+
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 133px;
 }
 
 .endereco {
@@ -833,10 +836,11 @@ div#itens-footer {
   font-weight: 600;
   font-size: 20px;
 
-  border-bottom: 1px solid white;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 10px;
+
+}
+
+.title-atendimento p {
+  margin-left: 100px;
 }
 
 
@@ -989,6 +993,12 @@ div#itens-footer {
     align-items: center;
     font-size: 13px;
     gap: 10px;
+
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
   }
 
   .horario {
@@ -1149,4 +1159,18 @@ div#itens-footer {
   .rua {
     text-align: center;
   }
+
+  .title-atendimento {
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .title-atendimento p {
+    margin-left: 0px;
+
+
+  }
+
 }
