@@ -437,9 +437,9 @@
     <img src="assets/whatssapp.svg" alt="Botao whatssapp" />
 
   </a>
-
-  <script src="script.js"></script>
   <script src="jquery.min.js"></script>
+
+  <script src="script.js?v=<?= time() ?>"></script>
 </body>
 
 </html>
