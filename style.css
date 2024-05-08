@@ -854,6 +854,56 @@ div#itens-footer {
 }
 
 
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* width: 100%; */
+  backdrop-filter: blur(8px);
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  background: #ffffff9c;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 24px;
+  border-radius: 17px;
+  max-width: calc(100% - 20px);
+  min-width: 400px;
+}
+
+#popup img {
+  max-height: calc(100vh - 100px);
+  width: 100%;
+}
+
+#popup .conteudo {
+  margin: 0;
+}
+
+#popup button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: none;
+  background: #ce1515;
+  aspect-ratio: 1;
+  width: 31px;
+  border-radius: 100px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+#popup p.leg-close {
+  position: absolute;
+  top: 4px;
+  left: 23px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 @media screen and (max-width:768px) {
 
   div#itens-footer {

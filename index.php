@@ -12,12 +12,25 @@
 
   <link rel="shortcut icon" href="assets/cloud-47.svg">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+
 </head>
 
 <body>
+  <!-- POPUP -->
+  <div id="popup" style="display: none;">
+    <p class="leg-close">Fechará em 6 segundos...</p>
+    <button type="button" onclick="closePopUp();"><i class="fas fa-times"></i></button>
+    <div class="conteudo">
+      <img src="/assets/popup/folder-forum.jpg" alt="Fórum Minas">
+    </div>
+  </div>
+
   <!-- CABEÇALHO -->
   <section id="hero">
     <header>
@@ -43,9 +56,7 @@
           <li><a href="#clientes">Clientes</a></li>
           <li><a href="#solucao">Soluções</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a class="whatsapp falar-com-atendente"
-              href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-              target="_blank">
+          <li><a class="whatsapp falar-com-atendente" href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">
               <i class="far fa-user" style="margin-right: 5px"></i> Falar
               com Atendente</a></li>
         </ul>
@@ -58,9 +69,7 @@
         <a href="#clientes">Clientes</a>
         <a href="#solucao">Soluções</a>
         <a href="#depoimentos">Depoimentos</a>
-        <a id="falar-atendente"
-          href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-          target="_blank">Falar com Atendente</a>
+        <a id="falar-atendente" href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">Falar com Atendente</a>
       </div>
       <div class="texto">
         <h1>
@@ -76,9 +85,7 @@
         </p>
 
 
-        <a id="saiba-mais"
-          href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-          target="_blank">Saiba mais<i class="fas fa-angle-down" style="margin-left: 10px"></i></a>
+        <a id="saiba-mais" href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">Saiba mais<i class="fas fa-angle-down" style="margin-left: 10px"></i></a>
 
       </div>
       <div class="img">
@@ -209,8 +216,7 @@
       <div class="slides-clientes">
         <div class="slide-clientes">
           <div class="bloco-cliente">
-            <img id="pedradosvolantes" src="assets/pedradosvolantes.png" alt="logo-manga"
-              style="width: 666px; margin-left: 13px;" />
+            <img id="pedradosvolantes" src="assets/pedradosvolantes.png" alt="logo-manga" style="width: 666px; margin-left: 13px;" />
             <img id="manga" src="assets/manga.png" alt="logo-manga" style="width: 426px;" />
             <img id="nanuque" src="assets/nanuque.png" alt="logo-nanuque" style="width: 466px; margin-left: 5px;" />
           </div>
@@ -218,11 +224,9 @@
 
         <div class="slide-clientes">
           <div class="bloco-cliente">
-            <img id="senadormendes" src="assets/senadormendes.png" alt="logo-senador-mendes"
-              style="width: 713px; margin-left: -8px;" />
+            <img id="senadormendes" src="assets/senadormendes.png" alt="logo-senador-mendes" style="width: 713px; margin-left: -8px;" />
             <img id="saogeraldodobaxio" src="assets/saogeraldodobaxio.png" alt="logo-sao-geraldo-do-baixio" />
-            <img id="alvoradademinas" src="assets/alvoradademinas.png" alt="logo-alvorada-de-minas"
-              style="width: 600px; margin-left: -8px;" />
+            <img id="alvoradademinas" src="assets/alvoradademinas.png" alt="logo-alvorada-de-minas" style="width: 600px; margin-left: -8px;" />
           </div>
         </div>
 
@@ -230,18 +234,15 @@
         <div class="slide-clientes">
           <div class="bloco-cliente">
             <img id="galileia" src="assets/galileia.png" alt="logo-galileia" style="width: 410px;margin-left: 21px;" />
-            <img id="novabelem" src="assets/novabelem.png" alt="logo-novabelem"
-              style="width: 509px;margin-left: 25px;" />
+            <img id="novabelem" src="assets/novabelem.png" alt="logo-novabelem" style="width: 509px;margin-left: 25px;" />
             <img id="itaobim" src="assets/itaobim.png" alt="logo-itaobim" style="width: 410px;margin-left: 21px;" />
           </div>
         </div>
 
         <div class="slide-clientes">
           <div class="bloco-cliente">
-            <img id="centraldeminas" src="assets/centraldeminas.png" alt="logo-centraldeminas"
-              style="width: 554px; margin-left: 3px;" />
-            <img id="conselheiropena" src="assets/conselheiropena.png" alt="logo-conselheiropena"
-              style="width: 601px;" />
+            <img id="centraldeminas" src="assets/centraldeminas.png" alt="logo-centraldeminas" style="width: 554px; margin-left: 3px;" />
+            <img id="conselheiropena" src="assets/conselheiropena.png" alt="logo-conselheiropena" style="width: 601px;" />
             <img id="freiinocencio" src="assets/freiinocencio.png" alt="logo-freiinocencio" style="width: 562px;" />
           </div>
         </div>
@@ -394,9 +395,7 @@
             <p>Acompanhe-nos</p>
             <a href="https://www.instagram.com/governo_web/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
-          <a id="btn-atendente"
-            href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"
-            target="_blank">
+          <a id="btn-atendente" href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank">
             <i class="far fa-user" style="margin-right: 5px"></i> Falar
             com Atendente</a>
         </div>
@@ -408,8 +407,7 @@
               <span><i class="fas fa-clock" style="margin-right: 8px;"></i>Seg a sex - 08:00 / 17:30</span>
             </div>
             <div class="endereco">
-              <span><a href="mailto:email@provedor.com.br"><i class="fas fa-envelope"
-                    style="margin-right: 8px;"></i>contato@governoweb.com.br</a></span>
+              <span><a href="mailto:email@provedor.com.br"><i class="fas fa-envelope" style="margin-right: 8px;"></i>contato@governoweb.com.br</a></span>
               <span class="rua"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Rua Peçanha, 848 - Sl 06
                 -
                 Centro
@@ -435,8 +433,7 @@
 
   <a href="#hero" class="botao-subir"><i class="fas fa-caret-up"></i></a>
 
-  <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!"
-    class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+  <a href="https://api.whatsapp.com/send?phone=5531984649775&text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
     <img src="assets/whatssapp.svg" alt="Botao whatssapp" />
 
   </a>
