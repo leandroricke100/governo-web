@@ -17,19 +17,19 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script> -->
 
 </head>
 
 <body>
   <!-- POPUP -->
-  <div id="popup" style="display: none;">
+  <!-- <div id="popup" style="display: none;">
     <p class="leg-close">Fechará em 6 segundos...</p>
     <button type="button" onclick="closePopUp();"><i class="fas fa-times"></i></button>
     <div class="conteudo">
       <img src="/assets/popup/folder-forum.jpg" alt="Fórum Minas">
     </div>
-  </div>
+  </div> -->
 
   <!-- CABEÇALHO -->
   <section id="hero">

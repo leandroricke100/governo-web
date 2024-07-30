@@ -106,24 +106,24 @@ function fechar() {
   $('.menu-lateral').hide();
 }
 
-function closePopUp() {
-  let $popup = $('#popup');
-  $popup.fadeOut();
-}
+// function closePopUp() {
+//   let $popup = $('#popup');
+//   $popup.fadeOut();
+// }
 
-$(() => {
-  let $popup = $('#popup');
-  let $legFechar = $('.leg-close');
-  $popup.fadeIn();
+// $(() => {
+//   let $popup = $('#popup');
+//   let $legFechar = $('.leg-close');
+//   $popup.fadeIn();
 
-  let time = 0;
-  let interval = setInterval(() => {
-    time++;
-    $legFechar.text(`Fechará em ${6 - time} segundos`);
-    if (time === 6) {
-      closePopUp();
-      clearInterval(interval);
-    }
-  }, 1000);
+//   let time = 0;
+//   let interval = setInterval(() => {
+//     time++;
+//     $legFechar.text(`Fechará em ${6 - time} segundos`);
+//     if (time === 6) {
+//       closePopUp();
+//       clearInterval(interval);
+//     }
+//   }, 1000);
 
-});
+// });

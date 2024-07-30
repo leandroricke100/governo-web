@@ -853,18 +853,16 @@ div#itens-footer {
   transition: .2s ease;
 }
 
-
+/* 
 #popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* width: 100%; */
   backdrop-filter: blur(8px);
   z-index: 9999999999;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh; */
   background: #ffffff9c;
   transform: translateY(-50%) translateX(-50%);
   padding: 24px;
@@ -902,7 +900,7 @@ div#itens-footer {
   left: 23px;
   font-size: 12px;
   font-weight: 600;
-}
+} */
 
 @media screen and (max-width:768px) {
 
