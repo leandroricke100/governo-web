@@ -148,6 +148,11 @@
           <p>GPS
             Legislativo</p>
         </div>
+
+        <div class="container-items">
+          <img src="assets/sistema/bot.png" alt="logo-gps">
+          <p>Elaboração de documento com Inteligência Artificial</p>
+        </div>
       </div>
     </div>
     <div class="conteudo">
